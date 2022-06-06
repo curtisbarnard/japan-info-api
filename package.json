@@ -1,0 +1,25 @@
+{
+  "name": "japan-info-api",
+  "version": "0.0.1",
+  "description": "An API for getting interesting info about Japan.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curtisbarnard/japan-info-api.git"
+  },
+  "keywords": [
+    "japan"
+  ],
+  "author": "Curtis Barnard Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curtisbarnard/japan-info-api/issues"
+  },
+  "homepage": "https://github.com/curtisbarnard/japan-info-api#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
