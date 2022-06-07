@@ -2,58 +2,11 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-<<<<<<< HEAD
-=======
 const prefectures = require('./prefectures');
->>>>>>> 364fa7fb555076db962fe15788eefef239a319e0
 const PORT = process.env.PORT || 8000;
 
 // middleware
 app.use(cors());
-<<<<<<< HEAD
-
-// test data
-const aichi = {
-  engName: 'Aichi',
-  jName: '愛知県',
-  island: 'Honshu',
-  region: 'Chubu',
-  largeCity: 'Nagoya',
-  totalArea: {
-    size: 5173.07,
-    unit: 'km^2',
-  },
-  elevation: {
-    highest: 1415.2,
-    unit: 'm',
-  },
-  population: {
-    2020: 7542415,
-  },
-};
-
-const aomori = {
-  engName: 'Aomori',
-  jName: '青森県',
-  island: 'Honshu',
-  region: 'Tohoku',
-  largeCity: 'Aomori',
-  totalArea: {
-    size: 9645.64,
-    unit: 'km^2',
-  },
-  elevation: {
-    highest: 1624.7,
-    unit: 'm',
-  },
-  population: {
-    2020: 1237984,
-  },
-};
-
-const prefectures = { aichi: aichi, aomori: aomori };
-=======
->>>>>>> 364fa7fb555076db962fe15788eefef239a319e0
 
 // root directory route
 app.get('/', (req, res) => {
