@@ -1,48 +1,12 @@
 // setup
 const express = require('express');
 const app = express();
+const cors = require('cors');
+const prefectures = require('./prefectures');
 const PORT = process.env.PORT || 8000;
 
-// test data
-const aichi = {
-  engName: 'Aichi',
-  jName: '愛知県',
-  island: 'Honshu',
-  region: 'Chubu',
-  largeCity: 'Nagoya',
-  totalArea: {
-    size: 5173.07,
-    unit: 'km^2',
-  },
-  elevation: {
-    highest: 1415.2,
-    unit: 'm',
-  },
-  population: {
-    2020: 7542415,
-  },
-};
-
-const aomori = {
-  engName: 'Aomori',
-  jName: '青森県',
-  island: 'Honshu',
-  region: 'Tohoku',
-  largeCity: 'Aomori',
-  totalArea: {
-    size: 9645.64,
-    unit: 'km^2',
-  },
-  elevation: {
-    highest: 1624.7,
-    unit: 'm',
-  },
-  population: {
-    2020: 1237984,
-  },
-};
-
-const prefectures = { aichi: aichi, aomori: aomori };
+// middleware
+app.use(cors());
 
 // root directory route
 app.get('/', (req, res) => {
