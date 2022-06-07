@@ -2,10 +2,15 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+<<<<<<< HEAD
+=======
+const prefectures = require('./prefectures');
+>>>>>>> 364fa7fb555076db962fe15788eefef239a319e0
 const PORT = process.env.PORT || 8000;
 
 // middleware
 app.use(cors());
+<<<<<<< HEAD
 
 // test data
 const aichi = {
@@ -47,6 +52,8 @@ const aomori = {
 };
 
 const prefectures = { aichi: aichi, aomori: aomori };
+=======
+>>>>>>> 364fa7fb555076db962fe15788eefef239a319e0
 
 // root directory route
 app.get('/', (req, res) => {
